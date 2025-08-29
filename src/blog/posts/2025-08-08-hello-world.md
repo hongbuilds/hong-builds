@@ -1,6 +1,7 @@
 ---
 title: "Hello World"
 slug: "hello-world"
+draft: false
 created: "2025-08-08"
 updated: "2025-08-08"
 tags: ["welcome", "hello world"]

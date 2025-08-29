@@ -16,15 +16,17 @@ const BlogList = () => {
           eager: true 
         });
 
-        const postsData = Object.entries(postModules).map(([path, content]) => {
-          const { frontmatter } = parseFrontmatter(content);
-          const filename = path.split('/').pop().replace('.md', '');
-          
-          return {
-            ...frontmatter,
-            slug: frontmatter.slug || filename
-          };
-        });
+        const postsData = Object.entries(postModules)
+          .map(([path, content]) => {
+            const { frontmatter } = parseFrontmatter(content);
+            const filename = path.split('/').pop().replace('.md', '');
+            
+            return {
+              ...frontmatter,
+              slug: frontmatter.slug || filename
+            };
+          })
+          .filter(post => post.draft !== true); // filter our drafts
 
         // Sort by created date (newest first)
         setPosts(postsData.sort((a, b) => new Date(b.created) - new Date(a.created)));
