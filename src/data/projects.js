@@ -12,14 +12,14 @@ const projectsData = [
     description: 'A modern recipe management web application built with React for sharing and organizing dessert and main dish recipes. Features responsive design, component-based architecture, and client-side routing.',
     image: 'https://picsum.photos/id/74/400/250',
     technologies: ['React', 'Vite', 'Tailwind CSS', 'React Router', 'GitHub Pages'],
-    link: 'https://leehongc.github.io/BooBaLoosKitchen/'
+    link: 'https://hongbuilds.github.io/BooBaLoosKitchen/'
   },
   {
     title: 'Recipe Ingredient List Creator',
     description: 'A streamlined web tool for generating clean, well-formatted ingredient lists for recipes. Features ingredient autosuggest, multiple export formats (plaintext/CSV), responsive design, and dynamic ingredient management.',
     image: 'https://picsum.photos/id/57/400/250',
     technologies: ['HTML', 'CSS', 'JavaScript'],
-    link: 'https://leehongc.github.io/recipe_ingredients_formatter/'
+    link: 'https://hongbuilds.github.io/recipe_ingredients_formatter/'
   },
 ];
 
